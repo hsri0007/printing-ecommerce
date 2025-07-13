@@ -100,8 +100,16 @@ export default function HomePage() {
       <header className="border-b bg-white sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <Printer className="h-8 w-8 text-blue-600" />
-            <span className="text-2xl font-bold text-gray-900">Brahmani prints</span>
+            <div className="relative h-8 w-8 md:h-10 md:w-10">
+              <Image
+              src="/logo.jpeg"
+              alt="Brahmani prints logo"
+              fill
+              className="object-contain rounded"
+              sizes="(max-width: 768px) 2rem, 2.5rem"
+              priority
+              />
+            </div>
           </div>
           <nav className="hidden md:flex items-center space-x-8">
             <Link href="/" className="text-gray-600 hover:text-gray-900">
