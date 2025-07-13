@@ -100,13 +100,13 @@ export default function HomePage() {
       <header className="border-b bg-white sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="relative w-20 h-20">
+            <div className="relative w-[150px] h-[40px]">
               <Image
               src="/logo.jpeg"
               alt="Brahmani prints logo"
               fill
               className="object-contain rounded"
-              sizes="(max-width: 768px) 2rem, 2.5rem"
+              // sizes="(max-width: 768px) 2rem, 2.5rem"
               priority
               />
             </div>
