@@ -10,7 +10,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ success: false, error: "Missing required parameters" }, { status: 400 })
     }
 
-    const key_secret = process.env.NEXT_PUBLIC_RAZORPAY_KEY_SECRET
+    const key_secret = process.env.RAZORPAY_KEY_SECRET
     if (!key_secret) {
       throw new Error("Razorpay key secret not configured")
     }
