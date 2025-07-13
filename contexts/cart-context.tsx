@@ -2,7 +2,7 @@
 
 import type React from "react"
 import { createContext, useContext, useReducer, useEffect } from "react"
-
+//comment
 export interface CartItem {
   id: string
   name: string
