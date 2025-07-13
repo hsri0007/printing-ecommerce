@@ -29,7 +29,7 @@ export default function ServicesLayout({
               <div className="hidden md:flex items-center space-x-6">
                 <Link href="/" className="flex items-center space-x-2">
                   <Home className="h-4 w-4" />
-                  <span className="font-semibold">PrintPro</span>
+                  <span className="font-semibold">Brahmani prints</span>
                 </Link>
               </div>
             </div>
@@ -42,7 +42,7 @@ export default function ServicesLayout({
                 </div>
                 <div className="flex items-center space-x-1">
                   <Mail className="h-4 w-4" />
-                  <span>info@printpro.com</span>
+                  <span>info@Brahmani prints.com</span>
                 </div>
               </div>
               <CartButton />
@@ -96,7 +96,7 @@ export default function ServicesLayout({
       <footer className="bg-muted/50 border-t mt-20">
         <div className="container mx-auto px-4 py-8">
           <div className="text-center text-muted-foreground">
-            <p>&copy; 2024 PrintPro. All rights reserved.</p>
+            <p>&copy; 2024 Brahmani prints. All rights reserved.</p>
           </div>
         </div>
       </footer>

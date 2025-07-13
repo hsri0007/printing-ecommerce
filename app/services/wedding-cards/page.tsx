@@ -446,7 +446,7 @@ export default function WeddingCardsPage() {
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground">
                   "Our wedding cards were absolutely stunning! The gold foiling and embossed design made them feel so
-                  premium. All our guests complimented the beautiful cards. Thank you PrintPro!"
+                  premium. All our guests complimented the beautiful cards. Thank you Brahmani prints!"
                 </p>
                 <div className="grid grid-cols-2 gap-2">
                   <Image

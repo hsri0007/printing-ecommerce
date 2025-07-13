@@ -499,7 +499,7 @@ export default function HoardingsPage() {
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground">
                   "Our highway hoarding has been a game-changer! 40x20 feet of premium visibility brought 30% more
-                  customers. PrintPro handled permits, installation - everything professionally."
+                  customers. Brahmani prints handled permits, installation - everything professionally."
                 </p>
                 <div className="grid grid-cols-2 gap-2">
                   <div className="text-center">

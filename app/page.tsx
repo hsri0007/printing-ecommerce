@@ -101,7 +101,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Printer className="h-8 w-8 text-blue-600" />
-            <span className="text-2xl font-bold text-gray-900">PrintPro</span>
+            <span className="text-2xl font-bold text-gray-900">Brahmani prints</span>
           </div>
           <nav className="hidden md:flex items-center space-x-8">
             <Link href="/" className="text-gray-600 hover:text-gray-900">
@@ -214,7 +214,7 @@ export default function HomePage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose PrintPro?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Brahmani prints?</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               We combine cutting-edge technology with exceptional service to deliver outstanding printing results every
               time.
@@ -240,7 +240,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Start Your Project?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            Get a free quote today and see why thousands of customers trust PrintPro for their printing needs.
+            Get a free quote today and see why thousands of customers trust Brahmani prints for their printing needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" className="text-lg px-8 py-3">
@@ -264,7 +264,7 @@ export default function HomePage() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <Printer className="h-8 w-8 text-blue-400" />
-                <span className="text-2xl font-bold">PrintPro</span>
+                <span className="text-2xl font-bold">Brahmani prints</span>
               </div>
               <p className="text-gray-400 mb-4">
                 Your trusted partner for all printing needs. Quality, speed, and exceptional service guaranteed.
@@ -324,13 +324,13 @@ export default function HomePage() {
               <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
               <div className="space-y-2 text-gray-400">
                 <p>📞 +91 98765 43210</p>
-                <p>✉️ info@printpro.com</p>
+                <p>✉️ info@Brahmani prints.com</p>
                 <p>📍 123 Print Street, Mumbai, India</p>
               </div>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 PrintPro. All rights reserved.</p>
+            <p>&copy; 2024 Brahmani prints. All rights reserved.</p>
           </div>
         </div>
       </footer>

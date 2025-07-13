@@ -209,7 +209,7 @@ export default function OrdersPage() {
                   </div>
                   <div>
                     <p className="font-medium">Email Us</p>
-                    <p className="text-sm text-muted-foreground">support@printpro.com</p>
+                    <p className="text-sm text-muted-foreground">support@Brahmani prints.com</p>
                     <p className="text-xs text-muted-foreground">24/7 Support</p>
                   </div>
                 </div>

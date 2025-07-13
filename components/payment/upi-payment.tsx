@@ -29,7 +29,7 @@ export function UPIPayment({ amount, onPaymentSuccess, onPaymentError }: UPIPaym
   const [isProcessing, setIsProcessing] = useState(false)
   const [copied, setCopied] = useState(false)
 
-  const upiLink = `upi://pay?pa=merchant@upi&pn=PrintPro&am=${amount}&cu=INR&tn=PrintPro Order Payment`
+  const upiLink = `upi://pay?pa=merchant@upi&pn=Brahmani prints&am=${amount}&cu=INR&tn=Brahmani prints Order Payment`
 
   const handleUPIPayment = async (appId?: string) => {
     setIsProcessing(true)
@@ -49,7 +49,7 @@ export function UPIPayment({ amount, onPaymentSuccess, onPaymentError }: UPIPaym
       // For UPI, we'll simulate the payment process
       // In a real implementation, you'd integrate with UPI deep linking
       const paymentLink = appId
-        ? `${appId}://upi/pay?pa=merchant@upi&pn=PrintPro&am=${amount}&cu=INR&tn=Order Payment&tr=${orderData.order.id}`
+        ? `${appId}://upi/pay?pa=merchant@upi&pn=Brahmani prints&am=${amount}&cu=INR&tn=Order Payment&tr=${orderData.order.id}`
         : upiLink
 
       // Open UPI app
