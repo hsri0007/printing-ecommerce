@@ -189,7 +189,7 @@ export function PaymentGateway({ amount, orderDetails }: PaymentGatewayProps) {
 
       // Configure Razorpay options
       const options = {
-        key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
+        key: process.env.NEXT_PUBLIC_NEXT_PUBLIC_RAZORPAY_KEY_ID,
         amount: orderData.order.amount,
         currency: orderData.order.currency,
         name: "Brahmani prints",
