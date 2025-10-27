@@ -379,7 +379,7 @@ export default function PamphletsPage() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-muted/50">
+      {/* <section className="py-20 bg-muted/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Campaign Success Stories</h2>
@@ -539,7 +539,7 @@ export default function PamphletsPage() {
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ Section */}
       <section className="py-20">

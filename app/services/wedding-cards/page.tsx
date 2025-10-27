@@ -402,7 +402,7 @@ export default function WeddingCardsPage() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Happy Couples</h2>
@@ -580,7 +580,7 @@ export default function WeddingCardsPage() {
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-pink-500 to-rose-500 text-white">

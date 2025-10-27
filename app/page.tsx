@@ -222,7 +222,7 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge variant="secondary" className="mb-4">
@@ -262,7 +262,7 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section id="quote" className="py-20 bg-primary text-primary-foreground">

@@ -416,7 +416,7 @@ export default function TShirtPrintingPage() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Customer Reviews</h2>
@@ -585,7 +585,7 @@ export default function TShirtPrintingPage() {
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-20 bg-primary text-primary-foreground">
