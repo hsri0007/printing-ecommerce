@@ -1,0 +1,125 @@
+import { NextResponse } from "next/server"
+
+export async function GET() {
+  // In a real app, this could read from a DB. For now, we return structured JSON.
+  const data = {
+    header: {
+      brand: "PrintPro",
+    },
+    services: [
+      {
+        id: "business-cards",
+        title: "Business Cards",
+        description: "Professional business cards with premium finishes",
+        priceLabel: "Starting from ₹299",
+        image: "/premium-business-cards.png",
+        href: "/services/business-cards",
+        popular: true,
+      },
+      {
+        id: "t-shirt-printing",
+        title: "T-Shirt Printing",
+        description: "Custom t-shirts with your designs and logos",
+        priceLabel: "Starting from ₹199",
+        image: "/custom-tshirt-printing.png",
+        href: "/services/t-shirt-printing",
+        popular: true,
+      },
+      {
+        id: "wedding-cards",
+        title: "Wedding Cards",
+        description: "Beautiful wedding invitations for your special day",
+        priceLabel: "Starting from ₹15/card",
+        image: "/placeholder-9539t.png",
+        href: "/services/wedding-cards",
+      },
+      {
+        id: "pamphlets-flyers",
+        title: "Pamphlets & Flyers",
+        description: "Eye-catching promotional materials",
+        priceLabel: "Starting from ₹2/piece",
+        image: "/assorted-marketing-materials.png",
+        href: "/services/pamphlets-flyers",
+      },
+      {
+        id: "flex-printing",
+        title: "Flex Printing",
+        description: "Large format printing for banners and displays",
+        priceLabel: "Starting from ₹25/sq ft",
+        image: "/placeholder-04mqm.png",
+        href: "/services/flex-printing",
+      },
+      {
+        id: "hoardings",
+        title: "Hoardings",
+        description: "Large outdoor advertising displays",
+        priceLabel: "Starting from ₹150/sq ft",
+        image: "/outdoor-hoarding-ads.png",
+        href: "/services/hoardings",
+      },
+    ],
+    features: [
+      {
+        iconKey: "printer",
+        title: "High-Quality Printing",
+        description: "State-of-the-art printing technology for crisp, vibrant results",
+      },
+      {
+        iconKey: "palette",
+        title: "Custom Designs",
+        description: "Professional design services to bring your vision to life",
+      },
+      {
+        iconKey: "clock",
+        title: "Fast Turnaround",
+        description: "Quick delivery without compromising on quality",
+      },
+      {
+        iconKey: "shield",
+        title: "Quality Guarantee",
+        description: "100% satisfaction guarantee on all our printing services",
+      },
+    ],
+    stats: [
+      { number: "10,000+", label: "Happy Customers" },
+      { number: "50,000+", label: "Orders Completed" },
+      { number: "99.9%", label: "Customer Satisfaction" },
+      { number: "24/7", label: "Customer Support" },
+    ],
+    testimonials: [
+      {
+        name: "Rajesh Kumar",
+        role: "Business Owner",
+        content: "Excellent quality and service. PrintPro delivered exactly what we needed for our marketing campaign.",
+        rating: 5,
+        image: "/customer-avatar-rajesh.png",
+      },
+      {
+        name: "Priya Sharma",
+        role: "Event Manager",
+        content: "Fast delivery and professional finish. The wedding cards were absolutely beautiful!",
+        rating: 5,
+        image: "/customer-avatar-priya.png",
+      },
+      {
+        name: "Amit Patel",
+        role: "Marketing Director",
+        content: "Great value for money. The flex banners helped boost our brand visibility significantly.",
+        rating: 5,
+        image: "/customer-avatar-amit.png",
+      },
+    ],
+    contact: {
+      phone: "+91 98765 43210",
+      email: "info@printpro.com",
+      address: "123 Print Street, Design City",
+    },
+  }
+
+  return NextResponse.json(data, {
+    headers: {
+      // Cache API response for 10 minutes (tune as needed)
+      "Cache-Control": "public, s-maxage=600, stale-while-revalidate=60",
+    },
+  })
+}
