@@ -118,10 +118,10 @@ export default function HomePage() {
             <Link href="/services" className="text-gray-600 hover:text-gray-900">
               Services
             </Link>
-            <Link href="/about" className="text-gray-600 hover:text-gray-900">
-              About
+            <Link href="/#why" className="text-gray-600 hover:text-gray-900">
+              Why Us
             </Link>
-            <Link href="/contact" className="text-gray-600 hover:text-gray-900">
+            <Link href="/#contact" className="text-gray-600 hover:text-gray-900">
               Contact
             </Link>
           </nav>
