@@ -71,8 +71,16 @@ export default function HomePage() {
       <header className="border-b bg-white sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <Printer className="h-8 w-8 text-primary" />
-            <span className="text-2xl font-bold text-foreground">{data.header.brand}</span>
+            <div className="relative w-[150px] h-[40px]">
+              <Image
+                src="/logo.jpeg"
+                alt="Brahmani prints logo"
+                fill
+                className="object-contain rounded"
+                // sizes="(max-width: 768px) 2rem, 2.5rem"
+                priority
+              />
+            </div>
           </div>
           <nav className="hidden md:flex items-center space-x-8">
             <Link href="/" className="text-muted-foreground hover:text-foreground">
