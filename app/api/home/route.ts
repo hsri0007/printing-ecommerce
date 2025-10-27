@@ -30,7 +30,7 @@ export async function GET() {
         title: "Wedding Cards",
         description: "Beautiful wedding invitations for your special day",
         priceLabel: "Starting from ₹15/card",
-        image: "/placeholder-9539t.png",
+        image: "/royal-traditional.png",
         href: "/services/wedding-cards",
       },
       {
@@ -46,7 +46,7 @@ export async function GET() {
         title: "Flex Printing",
         description: "Large format printing for banners and displays",
         priceLabel: "Starting from ₹25/sq ft",
-        image: "/placeholder-04mqm.png",
+        image: "/hero.png",
         href: "/services/flex-printing",
       },
       {
@@ -54,7 +54,7 @@ export async function GET() {
         title: "Hoardings",
         description: "Large outdoor advertising displays",
         priceLabel: "Starting from ₹150/sq ft",
-        image: "/outdoor-hoarding-ads.png",
+        image: "/airport-approach.png",
         href: "/services/hoardings",
       },
     ],
