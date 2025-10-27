@@ -156,7 +156,7 @@ export default function OrdersPage() {
                     <p className="font-medium">John Doe</p>
                     <p>123 Business Street</p>
                     <p>Mumbai, Maharashtra - 400001</p>
-                    <p>+91 98765 43210</p>
+                    <p>+91 81211 48833</p>
                   </div>
                 </div>
                 <div className="space-y-3">
@@ -199,7 +199,7 @@ export default function OrdersPage() {
                   </div>
                   <div>
                     <p className="font-medium">Call Us</p>
-                    <p className="text-sm text-muted-foreground">+91 98765 43210</p>
+                    <p className="text-sm text-muted-foreground">+91 81211 48833</p>
                     <p className="text-xs text-muted-foreground">Mon-Sat 9AM-7PM</p>
                   </div>
                 </div>

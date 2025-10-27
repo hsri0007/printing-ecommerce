@@ -110,8 +110,8 @@ export async function GET() {
       },
     ],
     contact: {
-      phone: "+91 98765 43210",
-      email: "info@printpro.com",
+      phone: "+91 81211 48833",
+      email: "info@brahmanigrahics.com",
       address: "123 Print Street, Design City",
     },
   }
