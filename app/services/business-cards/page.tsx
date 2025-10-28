@@ -298,10 +298,10 @@ export default function BusinessCardsPage() {
                     ))}
                   </div>
                   <div className="flex gap-2">
-                    <Button className="flex-1" onClick={() => addToCart(template)}>
+                    {/* <Button className="flex-1" onClick={() => addToCart(template)}>
                       <ShoppingCart className="h-4 w-4 mr-2" />
                       Add to Cart
-                    </Button>
+                    </Button> */}
                     <Button variant="outline" size="sm">
                       Customize
                     </Button>

@@ -97,7 +97,7 @@ export default function HomePage() {
             </Link>
           </nav>
           <div className="flex items-center space-x-4">
-            <CartButton />
+            {/* <CartButton /> */}
             <Button asChild>
               <Link href="#quote">Get Quote</Link>
             </Button>
