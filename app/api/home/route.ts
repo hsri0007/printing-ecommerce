@@ -110,7 +110,7 @@ export async function GET() {
       },
     ],
     contact: {
-      phone: "+91 81211 48833",
+      phone: "+91 8121146633",
       email: "info@brahmanigrahics.com",
       address: "123 Print Street, Design City",
     },

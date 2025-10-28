@@ -38,7 +38,7 @@ export default function ServicesLayout({
               <div className="hidden md:flex items-center space-x-4 text-sm">
                 <div className="flex items-center space-x-1">
                   <Phone className="h-4 w-4" />
-                  <span>+91 81211 48833</span>
+                  <span>+91 8121146633</span>
                 </div>
                 <div className="flex items-center space-x-1">
                   <Mail className="h-4 w-4" />

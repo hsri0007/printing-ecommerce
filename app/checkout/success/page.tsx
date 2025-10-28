@@ -203,7 +203,7 @@ export default function CheckoutSuccessPage() {
                 <Phone className="h-4 w-4 text-blue-600" />
                 <div>
                   <p className="text-sm font-medium">Call Us</p>
-                  <p className="text-sm text-gray-600">+91 81211 48833</p>
+                  <p className="text-sm text-gray-600">+91 8121146633</p>
                 </div>
               </div>
               <div className="flex items-center gap-2">
