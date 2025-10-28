@@ -112,7 +112,7 @@ export async function GET() {
     contact: {
       phone: "+91 8121146633",
       email: "info@brahmanigrahics.com",
-      address: "123 Print Street, Design City",
+      address: "1-1-54 STREET NO.1 Kakateeya Nagar, Habsiguda, Hyderabad, Telangana 500007",
     },
   }
 

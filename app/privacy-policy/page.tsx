@@ -116,9 +116,9 @@ export default function PrivacyPolicyPage() {
               If you have questions or comments about this Privacy Policy, please contact us at:
             </p>
             <div className="bg-muted p-4 rounded-lg space-y-2 text-muted-foreground">
-              <p>📧 Email: privacy@printpro.com</p>
-              <p>📞 Phone: +1 (555) 123-4567</p>
-              <p>📍 Address: 123 Print Street, Design City, DC 12345</p>
+              <p>📧 Email: privacy@brahmanigraphics.com</p>
+              <p>📞 Phone: +91 8121146633</p>
+              <p>📍 Address: 1-1-54 STREET NO.1 Kakateeya Nagar, Habsiguda, Hyderabad, Telangana 500007</p>
             </div>
           </section>
 
