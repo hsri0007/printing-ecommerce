@@ -131,9 +131,9 @@ export default function TermsOfServicePage() {
               If you have any questions about these Terms of Service, please contact us at:
             </p>
             <div className="bg-muted p-4 rounded-lg space-y-2 text-muted-foreground">
-              <p>📧 Email: support@printpro.com</p>
-              <p>📞 Phone: +1 (555) 123-4567</p>
-              <p>📍 Address: 123 Print Street, Design City, DC 12345</p>
+              <p>📧 Email: support@brahmanigraphics.com</p>
+              <p>📞 Phone: +91 8121146633</p>
+              <p>📍 Address: 1-1-54 STREET NO.1 Kakateeya Nagar, Habsiguda, Hyderabad, Telangana 500007</p>
             </div>
           </section>
         </div>
