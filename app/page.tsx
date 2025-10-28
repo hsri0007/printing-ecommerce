@@ -324,10 +324,10 @@ export default function HomePage() {
                 <Link href="#contact" className="block text-muted-foreground hover:text-foreground">
                   Contact
                 </Link>
-                <Link href="#" className="block text-muted-foreground hover:text-foreground">
+                <Link href="/privacy-policy" className="block text-muted-foreground hover:text-foreground">
                   Privacy Policy
                 </Link>
-                <Link href="#" className="block text-muted-foreground hover:text-foreground">
+                <Link href="/terms-of-service" className="block text-muted-foreground hover:text-foreground">
                   Terms of Service
                 </Link>
               </div>
