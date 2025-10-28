@@ -188,7 +188,7 @@ export default function WeddingCardsPage() {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Crown className="h-5 w-5 text-purple-600" />
-                  <span className="text-sm font-medium">500+ Happy Couples</span>
+                  <span className="text-sm font-medium">50+ Happy Couples</span>
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">

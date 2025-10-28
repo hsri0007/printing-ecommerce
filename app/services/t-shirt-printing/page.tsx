@@ -196,7 +196,7 @@ export default function TShirtPrintingPage() {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Package className="h-5 w-5 text-green-600" />
-                  <span className="text-sm font-medium">1000+ Orders Completed</span>
+                  <span className="text-sm font-medium">30+ Orders Completed</span>
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">

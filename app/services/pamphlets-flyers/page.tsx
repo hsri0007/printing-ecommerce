@@ -186,7 +186,7 @@ export default function PamphletsPage() {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Target className="h-5 w-5 text-orange-600" />
-                  <span className="text-sm font-medium">500+ Campaigns</span>
+                  <span className="text-sm font-medium">30+ Campaigns</span>
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">

@@ -11,7 +11,6 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Brahmani prints - Professional Printing Services",
   description: "High-quality printing services for all your business and personal needs",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
