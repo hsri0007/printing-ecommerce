@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://brahmanigraphics.com/sitemap.xml
+Host: https://brahmanigraphics.com
