@@ -29,6 +29,157 @@ const page = () => {
     "url": "https://brahmanigraphics.com"
   }
 
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://brahmanigraphics.com",
+    "name": "Brahmani Graphics",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://brahmanigraphics.com/search?query={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+
+  const webpageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "url": "https://brahmanigraphics.com",
+    "name": "Brahmani Graphics | Printing Services Hyderabad",
+    "description": "High-quality printing services for business cards, flyers, and t-shirts in Hyderabad.",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "xpath": [
+        "/html/head/title",
+        "/html/head/meta[@name='description']/@content"
+      ]
+    }
+  }
+
+  const servicesSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Business Card Printing",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Brahmani Graphics"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Hyderabad"
+    },
+    "description": "Full-color, high-quality business card printing with same-day delivery options."
+  }
+
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Brahmani Graphics",
+    "url": "https://brahmanigraphics.com/about",
+    "logo": "https://brahmanigraphics.com/logo.png",
+    "founder": "Srinivas Kappera",
+    "sameAs": [
+      "https://www.facebook.com/brahmanigraphics",
+      "https://www.instagram.com/brahmanigraphics"
+    ]
+  }
+
+  const servicesListSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "name": "Business Card Printing",
+        "serviceType": "Business Card Printing",
+        "description": "Full-color, high-quality business card printing with same-day options.",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Brahmani Graphics",
+          "url": "https://brahmanigraphics.com"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "Hyderabad"
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "Flyer & Leaflet Printing",
+        "serviceType": "Flyer Printing",
+        "description": "Single and double-sided flyers and leaflets in various paper stocks and finishes.",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Brahmani Graphics",
+          "url": "https://brahmanigraphics.com"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "Hyderabad"
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "T-Shirt & Apparel Printing",
+        "serviceType": "Apparel Printing",
+        "description": "Custom t-shirt printing (DTG, screen print, heat transfer) for small and bulk orders.",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Brahmani Graphics",
+          "url": "https://brahmanigraphics.com"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "Hyderabad"
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "Banner & Hoarding Printing",
+        "serviceType": "Large Format Printing",
+        "description": "Outdoor and indoor banners, hoardings and vinyl prints with weather‑resistant materials.",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Brahmani Graphics",
+          "url": "https://brahmanigraphics.com"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "Hyderabad"
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "Poster & Large Poster Printing",
+        "serviceType": "Poster Printing",
+        "description": "High-resolution poster printing in multiple sizes and finishes for events and promotions.",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Brahmani Graphics",
+          "url": "https://brahmanigraphics.com"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "Hyderabad"
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "Graphic Design & Prepress",
+        "serviceType": "Graphic Design",
+        "description": "Design, layout and prepress services to prepare print-ready artwork.",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Brahmani Graphics",
+          "url": "https://brahmanigraphics.com"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "Hyderabad"
+        }
+      }
+    ]
+  }
+
   return (
     <>
       <Head>
@@ -40,6 +191,38 @@ const page = () => {
         type="application/ld+json"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <Script
+        id="ld-json-website"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
+
+      <Script
+        id="ld-json-webpage"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <Script
+        id="ld-json-webpage"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesSchema) }}
+      />
+      <Script
+        id="ld-json-webpage"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+
+      <Script
+        id="ld-json-services"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesListSchema) }}
       />
 
       <main>
