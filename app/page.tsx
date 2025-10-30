@@ -150,26 +150,27 @@ const page = () => {
           "@type": "Place",
           "name": "Hyderabad"
         }
-      }
+      },
+      {
+        "@type": "Service",
+        "name": "Poster, Large Poster Printing, Large Format Flex Printing",
+        "serviceType": "Poster Printing",
+        "description": "High-quality flex banners for advertising, events, and promotions. Weather-resistant materials with vibrant colors that grab attention.",
+         "url": "https://brahmanigraphics.com/services/services/flex-printing",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Brahmani Graphics",
+          "url": "https://brahmanigraphics.com"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "Hyderabad"
+        }
+      },
     ]
   }
 
   //add later
-  // {
-  //   "@type": "Service",
-  //   "name": "Poster & Large Poster Printing",
-  //   "serviceType": "Poster Printing",
-  //   "description": "High-resolution poster printing in multiple sizes and finishes for events and promotions.",
-  //   "provider": {
-  //     "@type": "LocalBusiness",
-  //     "name": "Brahmani Graphics",
-  //     "url": "https://brahmanigraphics.com"
-  //   },
-  //   "areaServed": {
-  //     "@type": "Place",
-  //     "name": "Hyderabad"
-  //   }
-  // },
   // {
   //   "@type": "Service",
   //   "name": "Graphic Design & Prepress",
