@@ -5,12 +5,13 @@ import "./globals.css"
 import { CartProvider } from "@/contexts/cart-context"
 import { CartSidebar } from "@/components/cart-sidebar"
 import WhatsAppButton from "@/components/whats-app"
+import Script from "next/script"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-   title: "Brahmani Graphics | Printing Services Hyderabad",
-  description:"High-quality printing services for business cards, flyers, and t-shirts in Hyderabad.",
+  title: "Brahmani Graphics | Printing Services Hyderabad",
+  description: "High-quality printing services for business cards, flyers, and t-shirts in Hyderabad.",
   openGraph: {
     title: "Brahmani Graphics | prints - Professional Printing Services",
     description: "We design logos, business cards, websites & graphics that elevate your brand presence.",
@@ -40,6 +41,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-CDS2677GVE"
+          strategy="afterInteractive"
+        />
+
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-CDS2677GVE');
+          `}
+        </Script>
+
+      </head>
       <body className={inter.className}>
         <CartProvider>
           {children}
