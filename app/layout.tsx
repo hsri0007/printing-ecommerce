@@ -43,7 +43,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-CDS2677GVE"
+          src="https://www.googletagmanager.com/gtag/js?id=G-0PYP8DZ9N6"
           strategy="afterInteractive"
         />
 
@@ -52,7 +52,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-CDS2677GVE');
+            gtag('config', 'G-0PYP8DZ9N6');
           `}
         </Script>
 
