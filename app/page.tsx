@@ -3,12 +3,6 @@ import React from 'react'
 import HomePage from './pages/home-page'
 import Script from "next/script";
 
-export const metadata = {
-  title: "Brahmani Graphics | Printing Services Hyderabad",
-  description:
-    "High-quality printing services for business cards, flyers, and t-shirts in Hyderabad.",
-}
-
 const page = () => {
   const schema = {
     "@context": "https://schema.org",

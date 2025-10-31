@@ -9,8 +9,8 @@ import WhatsAppButton from "@/components/whats-app"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Brahmani Graphics - Professional Printing Services",
-  description: "High-quality printing services for all your business and personal needs",
+   title: "Brahmani Graphics | Printing Services Hyderabad",
+  description:"High-quality printing services for business cards, flyers, and t-shirts in Hyderabad.",
   openGraph: {
     title: "Brahmani Graphics | prints - Professional Printing Services",
     description: "We design logos, business cards, websites & graphics that elevate your brand presence.",
