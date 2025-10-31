@@ -5,7 +5,7 @@ import "./globals.css"
 import { CartProvider } from "@/contexts/cart-context"
 import { CartSidebar } from "@/components/cart-sidebar"
 import WhatsAppButton from "@/components/whats-app"
-import Script from "next/script"
+// import Script from "next/script"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -41,7 +41,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
+      {/* <head>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-0PYP8DZ9N6"
           strategy="afterInteractive"
@@ -56,7 +56,7 @@ export default function RootLayout({
           `}
         </Script>
 
-      </head>
+      </head> */}
       <body className={inter.className}>
         <CartProvider>
           {children}
