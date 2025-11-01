@@ -1,0 +1,9 @@
+{
+  "routes": [
+    {
+      "src": "/(wp-admin|wp-login\\.php|wp-config\\.php|xmlrpc\\.php|wordpress)",
+      "status": 404,
+      "dest": "/404"
+    }
+  ]
+}
