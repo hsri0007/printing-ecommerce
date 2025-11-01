@@ -9,38 +9,40 @@ export async function POST(req: Request) {
 
     const body = await req.json();
 
-    const quote = await Quote.create(body);
-
+    const quote = await Quote.create({...body, entity: "brahmani_graphics"});
+    // sriharikappera693_db_user
+// 9YI7BtqSUrVpY5rr
     // Nodemailer transporter
-    const transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 587,
-      secure: false,
-      auth: {
-        user: "info@brahmanigraphics.com",
-        pass: process.env.EMAIL_PASS,
-      },
-    });
+// const transporter = nodemailer.createTransport({
+//     host: "smtp.titan.email",
+//  port: 587,
+//    secure: false,
+//   auth: {
+//     user: "info@brahmanigraphics.com",       // e.g., info@yourdomain.com
+//     pass: "9603#KAPPsriopt@",       // the password / app-password
+//   },
+// });
+    // verify SMTP connection early (throws on auth failure)
+//     await transporter.verify();
 
-    const mailContent = `
-New Quote Request Received!
+//     const mailContent = `
+// New Quote Request Received!
 
-Name: ${quote.name}
-Phone: ${quote.phone}
-Email: ${quote.email}
-Service: ${quote.service}
+// Name: ${body.name}
+// Phone: ${body.phone}
+// Email: ${body.email}
+// Service: ${body.service}
 
-Message:
-${quote.message}
-    `;
+// Message:
+// ${body.message}
+//     `;
 
-    await transporter.sendMail({
-      from: `"Brahmani Graphics" <info@brahmanigraphics.com>`,
-      replyTo: quote.email,
-      to: "info@brahmanigraphics.com",
-      subject: `New Quote Request – ${quote.service}`,
-      text: mailContent,
-    });
+    // await transporter.sendMail({
+    //   from: `Brahmani Graphics`,
+    //   to: process.env.SMTP_USER,
+    //   subject: `New Quote Request – ${body.service}`,
+    //   text: mailContent,
+    // });
 
     return NextResponse.json({ success: true, message: "Quote submitted successfully" });
   } catch (error) {

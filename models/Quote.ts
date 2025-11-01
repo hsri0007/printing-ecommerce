@@ -7,6 +7,7 @@ const quoteSchema = new mongoose.Schema(
     phone: { type: String, required: true },
     service: { type: String, required: true }, // business card / tshirt / flyer
     message: { type: String },
+    entity: { type: String },
   },
   { timestamps: true }
 );
