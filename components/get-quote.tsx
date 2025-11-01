@@ -26,7 +26,7 @@ import { useState } from "react";
 
 const formSchema = z.object({
   name: z.string().min(2),
-  phone: z.number().min(10),
+  phone: z.string().min(10).max(10),
   email: z.string().email(),
   service: z.string().min(2),
   message: z.string().min(2),
@@ -103,7 +103,7 @@ export function GetQuoteDialog(props: GetQuoteDialogProps) {
               <FormField name="phone" control={form.control} render={({ field }) => (
                 <FormItem className="sm:col-span-1">
                   <FormLabel>Phone</FormLabel>
-                  <FormControl><Input placeholder="+91 XXXXX XXXXX" {...field} /></FormControl>
+                  <FormControl><Input type="number" placeholder="+91 XXXXX XXXXX" {...field} /></FormControl>
                   <FormMessage  />
                 </FormItem>
               )} />
