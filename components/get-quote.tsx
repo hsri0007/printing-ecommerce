@@ -50,6 +50,7 @@ interface GetQuoteDialogProps {
 export function GetQuoteDialog(props: GetQuoteDialogProps) {
   const [open, setOpen] = useState(false);
   const { defaultValues = DEFAULT_VALUES, title = "Get Quote", variant="default", className="w-full md:w-auto" } = props;
+  const [disable, setDisable] = useState(false);
 
   const form = useForm({
     resolver: zodResolver(formSchema),
@@ -57,6 +58,7 @@ export function GetQuoteDialog(props: GetQuoteDialogProps) {
   });
 
   async function onSubmit(values: any) {
+    setDisable(true);
     try {
       const res = await fetch("/api/get-quote", {
         method: "POST",
@@ -75,6 +77,8 @@ export function GetQuoteDialog(props: GetQuoteDialogProps) {
       }
     } catch (error) {
       toast.error("Server error");
+    }finally {
+      setDisable(false);
     }
   }
 
@@ -133,8 +137,8 @@ export function GetQuoteDialog(props: GetQuoteDialogProps) {
               )} />
             </div>
 
-            <Button type="submit" className="w-full sm:w-auto">
-              Submit Request
+            <Button type="submit" disabled={disable} className="w-full sm:w-auto">
+               {disable ? "Submitting..." : "Submit Request"}
             </Button>
           </form>
         </Form>
