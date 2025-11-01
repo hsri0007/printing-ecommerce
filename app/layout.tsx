@@ -5,7 +5,7 @@ import "./globals.css"
 import { CartProvider } from "@/contexts/cart-context"
 import { CartSidebar } from "@/components/cart-sidebar"
 import WhatsAppButton from "@/components/whats-app"
-// import Script from "next/script"
+import Script from "next/script"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -41,9 +41,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* <head>
+       <head>
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-0PYP8DZ9N6"
+          src="https://www.googletagmanager.com/gtag/js?id=G-NHR3V4GZJP"
           strategy="afterInteractive"
         />
 
@@ -52,11 +52,11 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-0PYP8DZ9N6');
+            gtag('config', 'G-NHR3V4GZJP');
           `}
         </Script>
 
-      </head> */}
+      </head> 
       <body className={inter.className}>
         <CartProvider>
           {children}
