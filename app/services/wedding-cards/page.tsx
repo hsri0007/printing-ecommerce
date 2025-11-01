@@ -7,6 +7,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { CheckCircle, Star, Heart, Gift, Download, Sparkles, Crown, ShoppingCart, Eye } from "lucide-react"
 import Image from "next/image"
+import { GetQuoteDialog } from "@/components/get-quote"
 
 export default function WeddingCardsPage() {
   const cardCategories = [
@@ -192,24 +193,21 @@ export default function WeddingCardsPage() {
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="text-lg px-8">
-                  <Sparkles className="mr-2 h-5 w-5" />
-                  Start Designing
-                </Button>
-                <Button variant="outline" size="lg" className="text-lg px-8 bg-transparent">
+                <GetQuoteDialog title="Get Design" className="text-lg px-8" />
+                {/* <Button variant="outline" size="lg" className="text-lg px-8 bg-transparent">
                   <Download className="mr-2 h-5 w-5" />
                   View Catalog
-                </Button>
+                </Button> */}
               </div>
             </div>
             <div className="relative">
-              <Image
+              {/* <Image
                 src="/placeholder.svg?height=500&width=600"
                 alt="Wedding Card Designs"
                 width={600}
                 height={500}
                 className="rounded-lg shadow-2xl"
-              />
+              /> */}
             </div>
           </div>
         </div>
@@ -229,14 +227,14 @@ export default function WeddingCardsPage() {
             {templates.map((template) => (
               <Card key={template.id} className="group hover:shadow-lg transition-all duration-300">
                 <div className="relative overflow-hidden">
-                  <Image
+                  {/* <Image
                     src={template.image || "/placeholder.svg"}
                     alt={template.name}
                     width={200}
                     height={250}
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  {template.popular && <Badge className="absolute top-3 left-3">Popular</Badge>}
+                  {template.popular && <Badge className="absolute top-3 left-3">Popular</Badge>} */}
                   <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity">
                     <Button size="sm" variant="secondary">
                       <Eye className="h-4 w-4 mr-1" />
@@ -275,9 +273,7 @@ export default function WeddingCardsPage() {
                       <ShoppingCart className="h-4 w-4 mr-2" />
                       Add to Cart
                     </Button> */}
-                    <Button variant="outline" size="sm">
-                      Customize
-                    </Button>
+                    <GetQuoteDialog title="Customize" />
                   </div>
                 </CardContent>
               </Card>
@@ -285,9 +281,9 @@ export default function WeddingCardsPage() {
           </div>
 
           <div className="text-center mt-12">
-            <Button variant="outline" size="lg">
+            {/* <Button variant="outline" size="lg">
               View All Templates
-            </Button>
+            </Button> */}
           </div>
         </div>
       </section>
@@ -318,9 +314,7 @@ export default function WeddingCardsPage() {
                       <span className="text-sm">{feature}</span>
                     </div>
                   ))}
-                  <Button className="w-full" variant={category.popular ? "default" : "outline"}>
-                    View Designs
-                  </Button>
+                  <GetQuoteDialog title="View Designs" className="w-full" variant={category.popular ? "default" : "outline"} />
                 </CardContent>
               </Card>
             ))}
@@ -590,17 +584,14 @@ export default function WeddingCardsPage() {
             Let us create beautiful wedding invitations that your guests will treasure forever.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="secondary" size="lg">
-              <Gift className="mr-2 h-5 w-5" />
-              Get Free Sample
-            </Button>
-            <Button
+            <GetQuoteDialog title="Get Free Sample" variant="secondary"  />
+            {/* <Button
               variant="outline"
               size="lg"
               className="bg-transparent border-white text-white hover:bg-white hover:text-pink-500"
             >
               Schedule Consultation
-            </Button>
+            </Button> */}
           </div>
         </div>
       </section>

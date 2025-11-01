@@ -7,6 +7,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { CheckCircle, Star, Download, Package, ShoppingCart, Eye } from "lucide-react"
 import Image from "next/image"
+import { GetQuoteDialog } from "@/components/get-quote"
 
 export default function TShirtPrintingPage() {
   const pricingTiers = [
@@ -200,23 +201,21 @@ export default function TShirtPrintingPage() {
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="text-lg px-8">
-                  Start Designing
-                </Button>
-                <Button variant="outline" size="lg" className="text-lg px-8 bg-transparent">
+                <GetQuoteDialog title="Get Design & Size Chart"  className="text-lg px-8" />
+                {/* <Button variant="outline" size="lg" className="text-lg px-8 bg-transparent">
                   <Download className="mr-2 h-5 w-5" />
                   Size Chart
-                </Button>
+                </Button> */}
               </div>
             </div>
             <div className="relative">
-              <Image
+              {/* <Image
                 src="/placeholder.svg?height=500&width=600"
                 alt="Custom T-Shirt Printing"
                 width={600}
                 height={500}
                 className="rounded-lg shadow-2xl"
-              />
+              /> */}
             </div>
           </div>
         </div>
@@ -236,14 +235,14 @@ export default function TShirtPrintingPage() {
             {templates.map((template) => (
               <Card key={template.id} className="group hover:shadow-lg transition-all duration-300">
                 <div className="relative overflow-hidden">
-                  <Image
+                  {/* <Image
                     src={template.image || "/placeholder.svg"}
                     alt={template.name}
                     width={200}
                     height={200}
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  {template.popular && <Badge className="absolute top-3 left-3">Popular</Badge>}
+                  {template.popular && <Badge className="absolute top-3 left-3">Popular</Badge>} */}
                   <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity">
                     <Button size="sm" variant="secondary">
                       <Eye className="h-4 w-4 mr-1" />
@@ -282,20 +281,18 @@ export default function TShirtPrintingPage() {
                       <ShoppingCart className="h-4 w-4 mr-2" />
                       Add to Cart
                     </Button> */}
-                    <Button variant="outline" size="sm">
-                      Customize
-                    </Button>
+                    <GetQuoteDialog title="Customize" />
                   </div>
                 </CardContent>
               </Card>
             ))}
           </div>
 
-          <div className="text-center mt-12">
+          {/* <div className="text-center mt-12">
             <Button variant="outline" size="lg">
               View All Designs
             </Button>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -360,9 +357,7 @@ export default function TShirtPrintingPage() {
                           <span className="text-sm">{feature}</span>
                         </div>
                       ))}
-                      <Button className="w-full" variant={tier.popular ? "default" : "outline"}>
-                        Get Quote
-                      </Button>
+                      <GetQuoteDialog className="w-full" variant={tier.popular ? "default" : "outline"} />
                     </CardContent>
                   </Card>
                 ))}

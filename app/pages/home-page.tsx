@@ -10,6 +10,7 @@ import { Badge } from "@/components/ui/badge"
 import { CartButton } from "@/components/cart-button"
 import type { HomeData, Feature } from "@/types/home"
 import HomeSkeleton from "@/components/home-skeleton"
+import { GetQuoteDialog } from "@/components/get-quote"
 
 export default function HomePage() {
   const [data, setData] = useState<HomeData | null>(null)
@@ -98,9 +99,10 @@ export default function HomePage() {
           </nav>
           <div className="flex items-center space-x-4">
             {/* <CartButton /> */}
-            <Button asChild>
+            {/* <Button asChild>
               <Link href="#quote">Get Quote</Link>
-            </Button>
+            </Button> */}
+                 <GetQuoteDialog />
           </div>
         </div>
       </header>
@@ -122,9 +124,6 @@ export default function HomePage() {
                 Browse Services
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
-            </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-3 bg-transparent" asChild>
-              <Link href="#quote">Get Custom Quote</Link>
             </Button>
           </div>
         </div>
@@ -273,9 +272,7 @@ export default function HomePage() {
             needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="secondary" size="lg" asChild>
-              <Link href="#services">Get Free Quote</Link>
-            </Button>
+            <GetQuoteDialog title="Get Free Quote" variant="secondary" />
             <Button
               variant="outline"
               size="lg"

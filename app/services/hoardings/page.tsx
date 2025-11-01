@@ -7,6 +7,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { CheckCircle, Star, Building, Eye, Download, Zap, Award, MapPin, ShoppingCart } from "lucide-react"
 import Image from "next/image"
+import { GetQuoteDialog } from "@/components/get-quote"
 
 export default function HoardingsPage() {
   const hoardingTypes = [
@@ -200,7 +201,7 @@ export default function HoardingsPage() {
                   <span className="text-sm font-medium">10+ Daily Impressions</span>
                 </div>
               </div>
-              <div className="flex flex-col sm:flex-row gap-4">
+              {/* <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="text-lg px-8">
                   <MapPin className="mr-2 h-5 w-5" />
                   Find Locations
@@ -209,16 +210,16 @@ export default function HoardingsPage() {
                   <Download className="mr-2 h-5 w-5" />
                   Location Map
                 </Button>
-              </div>
+              </div> */}
             </div>
             <div className="relative">
-              <Image
+              {/* <Image
                 src="/placeholder.svg?height=500&width=600"
                 alt="Hoarding Advertising"
                 width={600}
                 height={500}
                 className="rounded-lg shadow-2xl"
-              />
+              /> */}
             </div>
           </div>
         </div>
@@ -238,14 +239,14 @@ export default function HoardingsPage() {
             {templates.map((template) => (
               <Card key={template.id} className="group hover:shadow-lg transition-all duration-300">
                 <div className="relative overflow-hidden">
-                  <Image
+                  {/* <Image
                     src={template.image || "/placeholder.svg"}
                     alt={template.name}
                     width={350}
                     height={200}
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  {template.popular && <Badge className="absolute top-3 left-3">Popular</Badge>}
+                  /> */}
+                  {/* {template.popular && <Badge className="absolute top-3 left-3">Popular</Badge>} */}
                   <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity">
                     <Button size="sm" variant="secondary">
                       <Eye className="h-4 w-4 mr-1" />
@@ -281,7 +282,8 @@ export default function HoardingsPage() {
                       </div>
                     ))}
                   </div>
-                  <div className="flex gap-2">
+                  <GetQuoteDialog title="Book This Location" variant="default" className="w-full" />
+                  {/* <div className="flex gap-2">
                     <Button className="flex-1">
                       <ShoppingCart className="h-4 w-4 mr-2" />
                       Book Location
@@ -289,17 +291,17 @@ export default function HoardingsPage() {
                     <Button variant="outline" size="sm">
                       Site Visit
                     </Button>
-                  </div>
+                  </div> */}
                 </CardContent>
               </Card>
             ))}
           </div>
-
+{/* 
           <div className="text-center mt-12">
             <Button variant="outline" size="lg">
               View All Locations
             </Button>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -330,9 +332,7 @@ export default function HoardingsPage() {
                       <span className="text-sm">{feature}</span>
                     </div>
                   ))}
-                  <Button className="w-full" variant={type.popular ? "default" : "outline"}>
-                    Get Quote
-                  </Button>
+                  <GetQuoteDialog className="w-full" variant={type.popular ? "default" : "outline"} />
                 </CardContent>
               </Card>
             ))}
@@ -366,9 +366,9 @@ export default function HoardingsPage() {
                         <span className="text-muted-foreground">Typical Size:</span>
                         <span className="font-medium">{location.size}</span>
                       </div>
-                      <Button variant="outline" className="w-full mt-4 bg-transparent">
+                      {/* <Button variant="outline" className="w-full mt-4 bg-transparent">
                         View Locations
-                      </Button>
+                      </Button> */}
                     </CardContent>
                   </Card>
                 ))}
@@ -637,7 +637,8 @@ export default function HoardingsPage() {
             Get maximum visibility for your brand with our premium hoarding solutions. Contact us for a free
             consultation and site survey.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <GetQuoteDialog title="Schedule Site Visit" variant="secondary" />
+          {/* <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="secondary" size="lg">
               <MapPin className="mr-2 h-5 w-5" />
               Schedule Site Visit
@@ -649,7 +650,7 @@ export default function HoardingsPage() {
             >
               Get Location Map
             </Button>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>
