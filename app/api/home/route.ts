@@ -4,7 +4,7 @@ export async function GET() {
   // In a real app, this could read from a DB. For now, we return structured JSON.
   const data = {
     header: {
-      brand: "Brahmani Grahics",
+      brand: "Brahmani Graphics",
     },
     services: [
       {

@@ -506,7 +506,7 @@ export default function TShirtPrintingPage() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground">
-                  "Needed 100 t-shirts for a corporate event with just 2 days notice. Brahmani prints delivered on time with
+                  "Needed 100 t-shirts for a corporate event with just 2 days notice. Brahmani Graphics delivered on time with
                   perfect quality. The digital printing looked amazing!"
                 </p>
                 <div className="relative">

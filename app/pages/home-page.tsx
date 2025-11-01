@@ -74,7 +74,7 @@ export default function HomePage() {
             <div className="relative w-[150px] h-[40px]">
               <Image
                 src="/logo.jpeg"
-                alt="Brahmani prints logo"
+                alt="Brahmani Graphics logo"
                 fill
                 className="object-contain rounded"
                 // sizes="(max-width: 768px) 2rem, 2.5rem"

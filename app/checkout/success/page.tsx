@@ -85,7 +85,7 @@ export default function CheckoutSuccessPage() {
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Printer className="h-6 w-6 text-blue-600" />
-            <span className="text-xl font-bold text-gray-900">Brahmani prints</span>
+            <span className="text-xl font-bold text-gray-900">Brahmani Graphics</span>
           </div>
           <Button variant="ghost" onClick={() => router.push("/")} size="sm">
             <ArrowLeft className="h-4 w-4 mr-2" />
@@ -210,7 +210,7 @@ export default function CheckoutSuccessPage() {
                 <Mail className="h-4 w-4 text-blue-600" />
                 <div>
                   <p className="text-sm font-medium">Email Us</p>
-                  <p className="text-sm text-gray-600">support@Brahmani prints.com</p>
+                  <p className="text-sm text-gray-600">support@Brahmani Graphics.com</p>
                 </div>
               </div>
               <div className="flex items-center gap-2">

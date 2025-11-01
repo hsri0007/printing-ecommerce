@@ -192,7 +192,7 @@ export function PaymentGateway({ amount, orderDetails }: PaymentGatewayProps) {
         key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
         amount: orderData.order.amount,
         currency: orderData.order.currency,
-        name: "Brahmani prints",
+        name: "Brahmani Services",
         description: "Printing Services Payment",
         order_id: orderData.order.id,
         handler: async (response: any) => {
@@ -271,7 +271,7 @@ export function PaymentGateway({ amount, orderDetails }: PaymentGatewayProps) {
       // Create UPI payment link
       const upiLink = `upi://pay?pa=${upiId || "merchant@upi"}&pn=${encodeURIComponent(
         orderDetails.customerName,
-      )}&am=${amount}&cu=INR&tn=${encodeURIComponent("Brahmani prints Order Payment")}`
+      )}&am=${amount}&cu=INR&tn=${encodeURIComponent("Brahmani Graphics Order Payment")}`
 
       // Open UPI app
       window.location.href = upiLink
@@ -293,7 +293,7 @@ export function PaymentGateway({ amount, orderDetails }: PaymentGatewayProps) {
   const copyUPILink = () => {
     const upiLink = `upi://pay?pa=merchant@upi&pn=${encodeURIComponent(
       orderDetails.customerName,
-    )}&am=${amount}&cu=INR&tn=${encodeURIComponent("Brahmani prints Order Payment")}`
+    )}&am=${amount}&cu=INR&tn=${encodeURIComponent("Brahmani Graphics Order Payment")}`
     navigator.clipboard.writeText(upiLink)
     setCopied(true)
     setTimeout(() => setCopied(false), 2000)
