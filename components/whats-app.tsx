@@ -7,7 +7,7 @@ export default function WhatsAppButton() {
 //     // Optional: load CSS for animation if you want
 //   }, []);
 
-  const phone = '918121148833'; // replace with your WhatsApp number (no +)
+  const phone = '918121146633'; // replace with your WhatsApp number (no +)
   const message = encodeURIComponent('Hi! I’m interested in your services.');
   const link = `https://wa.me/${phone}?text=${message}`;
 
