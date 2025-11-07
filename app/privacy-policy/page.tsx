@@ -3,8 +3,13 @@ import { Button } from "@/components/ui/button"
 import { ArrowLeft } from "lucide-react"
 
 export const metadata = {
-  title: "Privacy Policy - PrintPro",
-  description: "Privacy Policy for PrintPro printing services",
+  title: "Privacy Policy - BrahmaniGraphics",
+  description: "Privacy Policy for BrahmaniGraphics printing services",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  }
 }
 
 export default function PrivacyPolicyPage() {
@@ -31,7 +36,7 @@ export default function PrivacyPolicyPage() {
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-foreground">1. Introduction</h2>
             <p className="text-muted-foreground leading-relaxed">
-              PrintPro ("we," "us," "our," or "Company") is committed to protecting your privacy. This Privacy Policy
+              BrahmaniGraphics ("we," "us," "our," or "Company") is committed to protecting your privacy. This Privacy Policy
               explains how we collect, use, disclose, and safeguard your information when you visit our website and use
               our services.
             </p>
@@ -125,7 +130,7 @@ export default function PrivacyPolicyPage() {
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-foreground">7. Changes to This Privacy Policy</h2>
             <p className="text-muted-foreground leading-relaxed">
-              PrintPro reserves the right to modify this privacy policy at any time. Changes and clarifications will
+              BrahmaniGraphics reserves the right to modify this privacy policy at any time. Changes and clarifications will
               take effect immediately upon their posting to the website. If we make material changes to this policy, we
               will notify you here that it has been updated, so that you are aware of what information we collect, how
               we use it, and under what circumstances, if any, we use and/or disclose it.

@@ -1,6 +1,39 @@
 import Script from 'next/script'
 import React from 'react'
 
+export const metadata = {
+  title: "T-Shirt Printing in Hyderabad | Custom Apparel | Brahmani Graphics",
+  description:
+    "Custom t-shirt printing in Hyderabad. DTG, screen, and heat transfer printing for bulk and single orders in Uppal & Habsiguda.",
+  keywords: [
+    "t-shirt printing Hyderabad",
+    "custom apparel Uppal",
+    "DTG printing Habsiguda",
+    "corporate t-shirts Hyderabad"
+  ],
+  alternates: {
+    canonical: "https://brahmanigraphics.com/services/t-shirt-printing"
+  },
+  openGraph: {
+    title: "Custom T-Shirt Printing in Hyderabad | Brahmani Graphics",
+    description:
+      "High-quality DTG, screen, and heat transfer t-shirt printing services in Hyderabad.",
+    url: "https://brahmanigraphics.com/services/t-shirt-printing",
+    siteName: "Brahmani Graphics",
+    images: [
+      {
+        url: "https://brahmanigraphics.com/images/tshirt-printing.jpg",
+        width: 1200,
+        height: 630,
+        alt: "T-shirt printing Hyderabad"
+      }
+    ],
+    locale: "en_IN",
+    type: "website"
+  }
+};
+
+
 const layout = ({ children }: { children: React.ReactNode }) => {
   const servicesSchema = {
   "@context": "https://schema.org",
@@ -31,10 +64,10 @@ const layout = ({ children }: { children: React.ReactNode }) => {
       "addressCountry": "IN"
     },
     "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "17.4009",
-      "longitude": "78.5591"
-    },
+  "@type": "GeoCoordinates",
+  "latitude": "17.41853619239367",
+  "longitude": "78.54074002698685"
+},
     "openingHours": "Mo-Sa 09:00-20:00",
     "sameAs": [
       "https://www.facebook.com/brahmanigraphics",

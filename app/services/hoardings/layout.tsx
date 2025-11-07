@@ -1,6 +1,38 @@
 import Script from 'next/script'
 import React from 'react'
 
+export const metadata = {
+  title: "Hoarding Printing in Hyderabad | Brahmani Graphics",
+  description:
+    "Large-format hoarding and banner printing in Hyderabad. Durable vinyl prints with vibrant colors and weather protection for outdoor ads.",
+  keywords: [
+    "hoarding printing Hyderabad",
+    "large banner printing Uppal",
+    "vinyl hoarding Habsiguda"
+  ],
+  alternates: {
+    canonical: "https://brahmanigraphics.com/services/hoardings"
+  },
+  openGraph: {
+    title: "Hoarding Printing in Hyderabad | Brahmani Graphics",
+    description:
+      "Custom outdoor hoardings and large banners printed with premium materials in Hyderabad.",
+    url: "https://brahmanigraphics.com/services/hoardings",
+    siteName: "Brahmani Graphics",
+    images: [
+      {
+        url: "https://brahmanigraphics.com/images/hoarding-printing.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Hoarding printing Hyderabad"
+      }
+    ],
+    locale: "en_IN",
+    type: "website"
+  }
+};
+
+
 const layout = ({ children }: { children: React.ReactNode }) => {
    const servicesSchema = {
   "@context": "https://schema.org",
@@ -31,10 +63,10 @@ const layout = ({ children }: { children: React.ReactNode }) => {
       "addressCountry": "IN"
     },
     "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "17.4009",
-      "longitude": "78.5591"
-    },
+  "@type": "GeoCoordinates",
+  "latitude": "17.41853619239367",
+  "longitude": "78.54074002698685"
+},
     "openingHours": "Mo-Sa 09:00-20:00",
     "sameAs": [
       "https://www.facebook.com/brahmanigraphics",

@@ -1,6 +1,39 @@
 import Script from 'next/script'
 import React from 'react'
 
+export const metadata = {
+  title: "Business Card Printing in Hyderabad | Brahmani Graphics",
+  description:
+    "Premium business card printing in Hyderabad, Uppal & Habsiguda. Matte, glossy, and textured finishes with same-day delivery. Order online at Brahmani Graphics.",
+  keywords: [
+    "business card printing Hyderabad",
+    "visiting card printing Uppal",
+    "custom business cards Habsiguda",
+    "corporate cards Hyderabad"
+  ],
+  alternates: {
+    canonical: "https://brahmanigraphics.com/services/business-card-printing"
+  },
+  openGraph: {
+    title: "Business Card Printing in Hyderabad | Brahmani Graphics",
+    description:
+      "Custom-designed business cards printed with premium quality and fast delivery across Hyderabad.",
+    url: "https://brahmanigraphics.com/services/business-card-printing",
+    siteName: "Brahmani Graphics",
+    images: [
+      {
+        url: "https://brahmanigraphics.com/images/business-card-printing.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Business card printing Hyderabad"
+      }
+    ],
+    locale: "en_IN",
+    type: "website"
+  }
+};
+
+
 const layout = ({children}:{ children: React.ReactNode}) => {
  const servicesSchema = {
   "@context": "https://schema.org",
@@ -29,10 +62,10 @@ const layout = ({children}:{ children: React.ReactNode}) => {
       "addressCountry": "IN"
     },
     "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "17.4009",
-      "longitude": "78.5591"
-    },
+  "@type": "GeoCoordinates",
+  "latitude": "17.41853619239367",
+  "longitude": "78.54074002698685"
+},
     "openingHours": "Mo-Su 00:00-23:59",
     "sameAs": [
       "https://www.facebook.com/brahmanigraphics",

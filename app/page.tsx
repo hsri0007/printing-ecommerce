@@ -67,10 +67,10 @@ const page = () => {
     "addressCountry": "IN"
   },
   "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "17.4009",
-    "longitude": "78.5591"
-  },
+  "@type": "GeoCoordinates",
+  "latitude": "17.41853619239367",
+  "longitude": "78.54074002698685"
+},
   "openingHours": "Mo-Sa 09:00-20:00",
   "sameAs": [
     "https://www.facebook.com/brahmanigraphics",

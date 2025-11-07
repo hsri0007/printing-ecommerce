@@ -1,6 +1,39 @@
 import Script from 'next/script'
 import React from 'react'
 
+export const metadata = {
+  title: "Wedding Card Printing in Hyderabad | Invitation Cards | Brahmani Graphics",
+  description:
+    "Elegant wedding invitation card printing in Hyderabad, Uppal & Habsiguda. Custom foil, embossed, matte & glossy designs for all occasions.",
+  keywords: [
+    "wedding card printing Hyderabad",
+    "invitation cards Uppal",
+    "custom wedding invitations Habsiguda",
+    "marriage card printing Hyderabad"
+  ],
+  alternates: {
+    canonical: "https://brahmanigraphics.com/services/wedding-card-printing"
+  },
+  openGraph: {
+    title: "Wedding Card Printing in Hyderabad | Brahmani Graphics",
+    description:
+      "Beautiful custom-designed wedding and invitation cards printed with luxury finishes in Hyderabad.",
+    url: "https://brahmanigraphics.com/services/wedding-card-printing",
+    siteName: "Brahmani Graphics",
+    images: [
+      {
+        url: "https://brahmanigraphics.com/images/wedding-card-printing.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Wedding card printing Hyderabad"
+      }
+    ],
+    locale: "en_IN",
+    type: "website"
+  }
+};
+
+
 const layout = ({children}:{ children: React.ReactNode}) => {
    const servicesSchema = {
   "@context": "https://schema.org",
@@ -30,10 +63,10 @@ const layout = ({children}:{ children: React.ReactNode}) => {
       "addressCountry": "IN"
     },
     "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "17.4009",
-      "longitude": "78.5591"
-    },
+  "@type": "GeoCoordinates",
+  "latitude": "17.41853619239367",
+  "longitude": "78.54074002698685"
+},
     "openingHours": "Mo-Sa 09:00-20:00",
     "sameAs": [
       "https://www.facebook.com/brahmanigraphics",

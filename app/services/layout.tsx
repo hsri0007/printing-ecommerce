@@ -1,12 +1,45 @@
-"use client"
+// "use client"
 
 import type React from "react"
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { CartButton } from "@/components/cart-button"
+// import { CartButton } from "@/components/cart-button"
 import { ArrowLeft, Home, Phone, Mail } from "lucide-react"
+
+export const metadata = {
+  title: "Printing Services in Hyderabad | Brahmani Graphics",
+  description:
+    "Brahmani Graphics offers professional printing services in Hyderabad – business cards, flex banners, hoardings, flyers, T-shirts, and wedding cards. Fast, affordable, and high quality.",
+  keywords: [
+    "printing services Hyderabad",
+    "flex banner printing Uppal",
+    "t-shirt printing Habsiguda",
+    "business card printing Hyderabad"
+  ],
+  alternates: {
+    canonical: "https://brahmanigraphics.com/services"
+  },
+  openGraph: {
+    title: "Printing Services in Hyderabad | Brahmani Graphics",
+    description:
+      "All-in-one printing solutions in Hyderabad – flex banners, business cards, flyers, T-shirts, and more.",
+    url: "https://brahmanigraphics.com/services",
+    siteName: "Brahmani Graphics",
+    images: [
+      {
+        url: "https://brahmanigraphics.com/images/printing-services.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Printing services in Hyderabad"
+      }
+    ],
+    locale: "en_IN",
+    type: "website"
+  }
+};
+
 
 export default function ServicesLayout({
   children,
