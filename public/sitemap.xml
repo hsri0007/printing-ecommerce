@@ -1,49 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?>
-  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    
-      <url>
-        <loc>https://brahmanigraphics.com/</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-      </url>
-      <url>
-        <loc>https://brahmanigraphics.com/services/business-cards</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-      </url>
-      <url>
-        <loc>https://brahmanigraphics.com/services/t-shirt-printing</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-      </url>
-      <url>
-        <loc>https://brahmanigraphics.com/services/wedding-cards</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-      </url>
-      <url>
-        <loc>https://brahmanigraphics.com/services/pamphlets-flyers</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-      </url>
-      <url>
-        <loc>https://brahmanigraphics.com/services/flex-printing</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-      </url>
-      <url>
-        <loc>https://brahmanigraphics.com/services/hoardings</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-      </url>
-      <url>
-        <loc>https://brahmanigraphics.com/#why</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-      </url>
-      <url>
-        <loc>https://brahmanigraphics.com/#contact</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-      </url>
-  </urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://brahmanigraphics.com/</loc>
+<lastmod>2025-11-07</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://brahmanigraphics.com/services/business-cards</loc>
+<lastmod>2025-11-07</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://brahmanigraphics.com/services/t-shirt-printing</loc>
+<lastmod>2025-11-07</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://brahmanigraphics.com/services/wedding-cards</loc>
+<lastmod>2025-11-07</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://brahmanigraphics.com/services/pamphlets-flyers</loc>
+<lastmod>2025-11-07</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://brahmanigraphics.com/services/flex-printing</loc>
+<lastmod>2025-11-07</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://brahmanigraphics.com/services/hoardings</loc>
+<lastmod>2025-11-07</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://brahmanigraphics.com/#why</loc>
+<lastmod>2025-11-07</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://brahmanigraphics.com/#contact</loc>
+<lastmod>2025-11-07</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+</urlset>

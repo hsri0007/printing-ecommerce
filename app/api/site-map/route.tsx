@@ -21,6 +21,7 @@ export async function GET() {
         (loc) => `
       <url>
         <loc>${loc}</loc>
+         <lastmod>2025-11-07</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
       </url>`
