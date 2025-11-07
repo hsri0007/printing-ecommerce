@@ -51,19 +51,90 @@ const page = () => {
   }
 
   const servicesSchema = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "serviceType": "Business Card Printing",
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "Brahmani Graphics"
-    },
-    "areaServed": {
-      "@type": "Place",
-      "name": "Hyderabad"
-    },
-    "description": "Full-color, high-quality business card printing with same-day delivery options."
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Brahmani Graphics",
+  "image": "https://brahmanigraphics.com/logo.jpeg",
+  "url": "https://brahmanigraphics.com",
+  "telephone": "+91 8121146633",
+  "priceRange": "₹25 - ₹5000",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Uppal Main Road, Near Metro Station",
+    "addressLocality": "Uppal",
+    "addressRegion": "Telangana",
+    "postalCode": "500039",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "17.4009",
+    "longitude": "78.5591"
+  },
+  "openingHours": "Mo-Sa 09:00-20:00",
+  "sameAs": [
+    "https://www.facebook.com/brahmanigraphics",
+    "https://www.instagram.com/brahmanigraphics"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "120"
+  },
+  "areaServed": [
+    { "@type": "Place", "name": "Uppal, Hyderabad" },
+    { "@type": "Place", "name": "Habsiguda, Hyderabad" },
+    { "@type": "Place", "name": "Hyderabad, Telangana" }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Printing Services Offered by Brahmani Graphics",
+    "itemListElement": [
+      {
+        "@type": "Service",
+        "name": "Business Card Printing",
+        "url": "https://brahmanigraphics.com/services/business-card-printing",
+        "serviceType": "Business Card Printing",
+        "description": "Full-color, premium business card printing with matte, glossy, and texture finishes. Same-day printing in Hyderabad."
+      },
+      {
+        "@type": "Service",
+        "name": "Flex & Banner Printing",
+        "url": "https://brahmanigraphics.com/services/flex-printing",
+        "serviceType": "Flex Printing",
+        "description": "Weather-resistant flex banners and posters for outdoor advertising, events, and promotions."
+      },
+      {
+        "@type": "Service",
+        "name": "Hoarding & Large Format Printing",
+        "url": "https://brahmanigraphics.com/services/hoardings",
+        "serviceType": "Large Format Printing",
+        "description": "High-quality hoardings and vinyl prints for outdoor visibility and brand promotion."
+      },
+      {
+        "@type": "Service",
+        "name": "Pamphlet & Flyer Printing",
+        "url": "https://brahmanigraphics.com/services/pamphlets-flyers",
+        "serviceType": "Flyer Printing",
+        "description": "Custom flyers and leaflets in multiple paper stocks and finishes. Affordable bulk printing for marketing campaigns."
+      },
+      {
+        "@type": "Service",
+        "name": "T-Shirt & Apparel Printing",
+        "url": "https://brahmanigraphics.com/services/t-shirt-printing",
+        "serviceType": "Apparel Printing",
+        "description": "DTG, screen, and heat transfer t-shirt printing for events, corporate wear, and custom designs."
+      },
+      {
+        "@type": "Service",
+        "name": "Wedding Card Printing",
+        "url": "https://brahmanigraphics.com/services/wedding-card-printing",
+        "serviceType": "Wedding Invitation Printing",
+        "description": "Elegant, customized wedding and invitation cards with foil, emboss, and matte finishes for every occasion."
+      }
+    ]
   }
+}
 
   const organizationSchema = {
     "@context": "https://schema.org",
