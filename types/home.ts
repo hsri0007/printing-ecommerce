@@ -5,6 +5,7 @@ export type Service = {
   priceLabel: string
   image: string
   href: string
+  alternativeText: string
   popular?: boolean
 }
 
@@ -36,6 +37,11 @@ export type ContactInfo = {
 export type HomeData = {
   header: {
     brand: string
+  }
+  footer: {
+    brand: string
+    description: string
+    tagline: string
   }
   services: Service[]
   features: Feature[]

@@ -10,16 +10,16 @@ import Script from "next/script"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Brahmani Graphics | Printing Services Hyderabad",
-  description: "High-quality printing services for business cards, flyers, and t-shirts in Hyderabad.",
+  title: "Brahmani Graphics | Printing Services in Hyderabad | Brahmani Graphics – Uppal • Habsiguda • Tarnaka",
+  description: "Brahmani Graphics offers premium printing services in Hyderabad, Uppal, Habsiguda – business cards, flex banners, hoardings, flyers, T-shirts and wedding cards. Fast delivery, local & professional.",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "Brahmani Graphics | prints - Professional Printing Services",
-    description: "We design logos, business cards, websites & graphics that elevate your brand presence.",
+    title: "Brahmani Graphics | Printing Services in Hyderabad | Brahmani Graphics – Uppal • Habsiguda • Tarnaka",
+    description: "Brahmani Graphics offers premium printing services in Hyderabad, Uppal, Habsiguda – business cards, flex banners, hoardings, flyers, T-shirts and wedding cards. Fast delivery, local & professional.",
     url: "https://brahmanigraphics.com",
     siteName: "Brahmani Graphics",
     images: [
@@ -60,7 +60,6 @@ export default function RootLayout({
             gtag('config', 'G-NHR3V4GZJP');
           `}
         </Script>
-
       </head> 
       <body className={inter.className}>
         <CartProvider>

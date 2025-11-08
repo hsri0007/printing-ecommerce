@@ -1,70 +1,28 @@
-"use client"
+import Link from "next/link";
+import Image from "next/image";
+import { Printer, Palette, Clock, Shield, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import type { HomeData, Feature } from "@/types/home";
+import { GetQuoteDialog } from "@/components/get-quote";
 
-import { useEffect, useMemo, useState } from "react"
-import Link from "next/link"
-import Image from "next/image"
-import { Printer, Palette, Clock, Shield, Star, ArrowRight } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { CartButton } from "@/components/cart-button"
-import type { HomeData, Feature } from "@/types/home"
-import HomeSkeleton from "@/components/home-skeleton"
-import { GetQuoteDialog } from "@/components/get-quote"
+async function getHomeData() {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/home`)
+  if (!res.ok) throw new Error("Failed to load homepage data")
+  return res.json()
+}
 
-export default function HomePage() {
-  const [data, setData] = useState<HomeData | null>(null)
-  const [loading, setLoading] = useState<boolean>(true)
-  const [error, setError] = useState<string | null>(null)
+export default async function HomePage() {
+  const data: HomeData = await getHomeData();
 
-  useEffect(() => {
-    let active = true
-    async function load() {
-      try {
-        setLoading(true)
-        const res = await fetch("/api/home", { cache: "no-store" })
-        if (!res.ok) throw new Error("Failed to load homepage data")
-        const json: HomeData = await res.json()
-        if (active) setData(json)
-      } catch (e: any) {
-        if (active) setError(e?.message || "Something went wrong")
-      } finally {
-        if (active) setLoading(false)
-      }
-    }
-    load()
-    return () => {
-      active = false
-    }
-  }, [])
-
-  const iconMap = useMemo(
-    () => ({
-      printer: Printer,
-      palette: Palette,
-      clock: Clock,
-      shield: Shield,
-    }),
-    [],
-  )
-
-  if (loading) {
-    return <HomeSkeleton />
+  const iconMap = {
+    printer: Printer,
+    palette: Palette,
+    clock: Clock,
+    shield: Shield,
   }
 
-  if (error) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="max-w-md w-full p-6 border rounded-lg text-center space-y-3">
-          <h2 className="text-xl font-semibold">Unable to load content</h2>
-          <p className="text-muted-foreground">{error}</p>
-          <Button onClick={() => location.reload()}>Retry</Button>
-        </div>
-      </div>
-    )
-  }
-
-  if (!data) return null
+  if (!data) return null;
 
   return (
     <div className="min-h-screen">
@@ -102,7 +60,7 @@ export default function HomePage() {
             {/* <Button asChild>
               <Link href="#quote">Get Quote</Link>
             </Button> */}
-                 <GetQuoteDialog />
+            <GetQuoteDialog />
           </div>
         </div>
       </header>
@@ -111,12 +69,11 @@ export default function HomePage() {
       <section className="bg-gradient-to-br from-primary/10 via-background to-secondary/10 py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-            Professional Printing
-            <span className="text-primary"> Made Simple</span>
+            All-in-one Printing Services in Hyderabad
+            <span className="text-primary">(Uppal & Habsiguda)</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            From business cards to large format printing, we deliver high-quality results with fast turnaround times and
-            competitive pricing.
+            Based in Uppal, Habsiguda (Hyderabad), we at Brahmani Graphics specialise in delivering high-quality printed materials for every business and event. From premium business cards to large format flex prints, from eye-catching hoardings to customised T-shirts and wedding invitation cards — we serve Hyderabad with same-day or next-day options.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="text-lg px-8 py-3" asChild>
@@ -147,9 +104,10 @@ export default function HomePage() {
       <section id="services" className="py-20 bg-muted/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Our Printing Services</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Our Printing Services in Hyderabad</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Choose from our wide range of professional printing services, each tailored to meet your specific needs.
+              We provide premium printing services in Uppal, Habsiguda, and across Hyderabad.
+              From small business needs to large-format marketing materials — we print it all.
             </p>
           </div>
 
@@ -164,19 +122,21 @@ export default function HomePage() {
                     height={200}
                     className="w-full h-48 object-cover rounded-t-lg"
                   />
-                  {service.popular && (
+                  {/* {service.popular && (
                     <Badge className="absolute top-4 left-4">
                       <Star className="h-3 w-3 mr-1" />
                       Popular
                     </Badge>
-                  )}
+                  )} */}
                 </div>
                 <CardHeader>
                   <CardTitle className="flex items-center justify-between">
-                    {service.title}
+                    <h3>{service.title}</h3>
                     <ArrowRight className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
                   </CardTitle>
-                  <CardDescription>{service.description}</CardDescription>
+                  <CardDescription>
+                    <p>{service.description}</p>
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex items-center justify-between">
@@ -294,10 +254,10 @@ export default function HomePage() {
                 <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                   <Printer className="h-5 w-5 text-primary-foreground" />
                 </div>
-                <span className="text-xl font-bold">{data.header.brand}</span>
+                <span className="text-xl font-bold">{data.footer.brand}</span>
               </div>
               <p className="text-muted-foreground">
-                Professional printing services for all your business and personal needs. Quality guaranteed.
+                {data.footer.description}
               </p>
             </div>
 
@@ -342,11 +302,11 @@ export default function HomePage() {
 
           <div className="border-t mt-8 pt-8 text-center text-muted-foreground">
             <p>
-              &copy; {new Date().getFullYear()} {data.header.brand}. All rights reserved.
+              &copy; {new Date().getFullYear()} {data.footer.tagline}. All rights reserved.
             </p>
           </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }
