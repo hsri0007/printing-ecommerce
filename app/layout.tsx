@@ -6,6 +6,7 @@ import { CartProvider } from "@/contexts/cart-context"
 import { CartSidebar } from "@/components/cart-sidebar"
 import WhatsAppButton from "@/components/whats-app"
 import Script from "next/script"
+import FestivalBanner from "@/components/FestivalBanner"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -65,6 +66,7 @@ export default function RootLayout({
         </Script>
       </head> 
       <body className={inter.className}>
+        <FestivalBanner />
         <CartProvider>
           {children}
           <WhatsAppButton />
