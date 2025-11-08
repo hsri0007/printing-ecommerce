@@ -7,6 +7,7 @@ import { CartSidebar } from "@/components/cart-sidebar"
 import WhatsAppButton from "@/components/whats-app"
 import Script from "next/script"
 import FestivalBanner from "@/components/FestivalBanner"
+import { Toaster } from "react-hot-toast"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -72,6 +73,7 @@ export default function RootLayout({
           <WhatsAppButton />
           <CartSidebar />
         </CartProvider>
+         <Toaster position="top-right" />
       </body>
     </html>
   )

@@ -21,9 +21,8 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { toast } from "sonner";
 import { useState } from "react";
-
+import toast from "react-hot-toast";
 const formSchema = z.object({
   name: z.string().min(2),
   phone: z.string().min(10).max(10),
