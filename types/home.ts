@@ -10,7 +10,7 @@ export type Service = {
 }
 
 export type Feature = {
-  iconKey: "printer" | "palette" | "clock" | "shield"
+  iconKey: string
   title: string
   description: string
 }

@@ -5,15 +5,11 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import type { HomeData, Feature } from "@/types/home";
 import { GetQuoteDialog } from "@/components/get-quote";
+import { HOMEPAGE_DATA } from "@/data/home-data/home-data";
 
-async function getHomeData() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/home`)
-  if (!res.ok) throw new Error("Failed to load homepage data")
-  return res.json()
-}
 
 export default async function HomePage() {
-  const data: HomeData = await getHomeData();
+  const data: HomeData = HOMEPAGE_DATA
 
   const iconMap = {
     printer: Printer,
@@ -21,6 +17,7 @@ export default async function HomePage() {
     clock: Clock,
     shield: Shield,
   }
+  type IconName = keyof typeof iconMap;
 
   if (!data) return null;
 
@@ -165,7 +162,7 @@ export default async function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {data.features.map((feature: Feature, index) => {
-              const Icon = iconMap[feature.iconKey]
+              const Icon = iconMap[feature.iconKey as IconName];
               return (
                 <div key={index} className="text-center">
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 text-primary">
