@@ -331,7 +331,7 @@ const servicesListSchema = {
         "@type": "Place",
         "name": "Hyderabad"
       }
-    },
+    }
   ]
 }
 
