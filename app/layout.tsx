@@ -199,9 +199,21 @@ const servicesListSchema = {
       "description": "Full-color, high-quality business card printing with same-day options.",
       "url": "https://brahmanigraphics.com/services/business-cards",
       "provider": {
-        "@type": "LocalBusiness",
-        "name": "Brahmani Graphics",
-        "url": "https://brahmanigraphics.com"
+       "@type": "LocalBusiness",
+  "name": "Brahmani Graphics",
+  "description": "Professional printing services in Hyderabad including business cards, flyers, t-shirts, and banners.",
+  "image": "https://brahmanigraphics.com/logo.jpeg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1-1-54 STREET NO.1, Kakateeya Nagar, Habsiguda",
+    "addressLocality": "Hyderabad",
+    "addressRegion": "Telangana",
+    "postalCode": "500007",
+    "addressCountry": "IN"
+  },
+  "telephone": "+91 8121146633",
+  "openingHours": "Mo-Su 00:00-23:59",
+  "url": "https://brahmanigraphics.com"
       },
       "areaServed": {
         "@type": "Place",
@@ -215,9 +227,21 @@ const servicesListSchema = {
       "description": "Single and double-sided flyers and leaflets in various paper stocks and finishes.",
       "url": "https://brahmanigraphics.com/services/pamphlets-flyers",
       "provider": {
-        "@type": "LocalBusiness",
-        "name": "Brahmani Graphics",
-        "url": "https://brahmanigraphics.com"
+       "@type": "LocalBusiness",
+  "name": "Brahmani Graphics",
+  "description": "Professional printing services in Hyderabad including business cards, flyers, t-shirts, and banners.",
+  "image": "https://brahmanigraphics.com/logo.jpeg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1-1-54 STREET NO.1, Kakateeya Nagar, Habsiguda",
+    "addressLocality": "Hyderabad",
+    "addressRegion": "Telangana",
+    "postalCode": "500007",
+    "addressCountry": "IN"
+  },
+  "telephone": "+91 8121146633",
+  "openingHours": "Mo-Su 00:00-23:59",
+  "url": "https://brahmanigraphics.com"
       },
       "areaServed": {
         "@type": "Place",
@@ -231,9 +255,21 @@ const servicesListSchema = {
       "description": "Custom t-shirt printing (DTG, screen print, heat transfer) for small and bulk orders.",
       "url": "https://brahmanigraphics.com/services/t-shirt-printing",
       "provider": {
-        "@type": "LocalBusiness",
-        "name": "Brahmani Graphics",
-        "url": "https://brahmanigraphics.com"
+     "@type": "LocalBusiness",
+  "name": "Brahmani Graphics",
+  "description": "Professional printing services in Hyderabad including business cards, flyers, t-shirts, and banners.",
+  "image": "https://brahmanigraphics.com/logo.jpeg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1-1-54 STREET NO.1, Kakateeya Nagar, Habsiguda",
+    "addressLocality": "Hyderabad",
+    "addressRegion": "Telangana",
+    "postalCode": "500007",
+    "addressCountry": "IN"
+  },
+  "telephone": "+91 8121146633",
+  "openingHours": "Mo-Su 00:00-23:59",
+  "url": "https://brahmanigraphics.com"
       },
       "areaServed": {
         "@type": "Place",
@@ -247,9 +283,21 @@ const servicesListSchema = {
       "description": "Outdoor and indoor banners, hoardings and vinyl prints with weather‑resistant materials.",
       "url": "https://brahmanigraphics.com/services/hoardings",
       "provider": {
-        "@type": "LocalBusiness",
-        "name": "Brahmani Graphics",
-        "url": "https://brahmanigraphics.com"
+       "@type": "LocalBusiness",
+  "name": "Brahmani Graphics",
+  "description": "Professional printing services in Hyderabad including business cards, flyers, t-shirts, and banners.",
+  "image": "https://brahmanigraphics.com/logo.jpeg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1-1-54 STREET NO.1, Kakateeya Nagar, Habsiguda",
+    "addressLocality": "Hyderabad",
+    "addressRegion": "Telangana",
+    "postalCode": "500007",
+    "addressCountry": "IN"
+  },
+  "telephone": "+91 8121146633",
+  "openingHours": "Mo-Su 00:00-23:59",
+  "url": "https://brahmanigraphics.com"
       },
       "areaServed": {
         "@type": "Place",
@@ -263,9 +311,21 @@ const servicesListSchema = {
       "description": "High-quality flex banners for advertising, events, and promotions. Weather-resistant materials with vibrant colors that grab attention.",
       "url": "https://brahmanigraphics.com/services/services/flex-printing",
       "provider": {
-        "@type": "LocalBusiness",
-        "name": "Brahmani Graphics",
-        "url": "https://brahmanigraphics.com"
+      "@type": "LocalBusiness",
+  "name": "Brahmani Graphics",
+  "description": "Professional printing services in Hyderabad including business cards, flyers, t-shirts, and banners.",
+  "image": "https://brahmanigraphics.com/logo.jpeg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1-1-54 STREET NO.1, Kakateeya Nagar, Habsiguda",
+    "addressLocality": "Hyderabad",
+    "addressRegion": "Telangana",
+    "postalCode": "500007",
+    "addressCountry": "IN"
+  },
+  "telephone": "+91 8121146633",
+  "openingHours": "Mo-Su 00:00-23:59",
+  "url": "https://brahmanigraphics.com"
       },
       "areaServed": {
         "@type": "Place",
