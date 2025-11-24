@@ -10,6 +10,15 @@
     },
     services: [
       {
+        id: "flex-printing",
+        title: "Flex & Banner Printing",
+        description: "Durable outdoor and indoor flex prints in vivid colors — perfect for advertising and events.",
+        priceLabel: "Starting from ₹25/sq ft",
+        image: "/images/services/flex-printing/hero.png",
+        alternativeText: "Flex banner printing in Uppal, Habsiguda & Hyderabad",
+        href: "/services/flex-printing",
+      },
+      {
         id: "business-cards",
         title: "Business Card Printing",
         description: " Custom visiting and business cards with matte, glossy, or textured finishes.",
@@ -46,15 +55,6 @@
         image: "/images/services/pamphlets-flyers/pamphlets-flyer-printing.png",
         alternativeText: "Pamphlet and flyer printing in Uppal, Habsiguda & Hyderabad",
         href: "/services/pamphlets-flyers",
-      },
-      {
-        id: "flex-printing",
-        title: "Flex & Banner Printing",
-        description: "Durable outdoor and indoor flex prints in vivid colors — perfect for advertising and events.",
-        priceLabel: "Starting from ₹25/sq ft",
-        image: "/images/services/flex-printing/hero.png",
-        alternativeText: "Flex banner printing in Uppal, Habsiguda & Hyderabad",
-        href: "/services/flex-printing",
       },
       {
         id: "hoardings",
