@@ -105,11 +105,6 @@ const layout = ({children}:{ children: React.ReactNode}) => {
         "description": "Vibrant eco-solvent prints for indoor displays, exhibitions, and retail branding in Hyderabad."
       }
     ]
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "95"
   }
 };
 
