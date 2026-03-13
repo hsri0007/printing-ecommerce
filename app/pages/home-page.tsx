@@ -45,11 +45,11 @@ export default async function HomePage() {
             <Link href="/services/business-cards" className="text-muted-foreground hover:text-foreground">
               Services
             </Link>
-            <Link href="#why" className="text-muted-foreground hover:text-foreground">
-              Why Us
+            <Link href="/about-us" className="text-muted-foreground hover:text-foreground">
+              About Us
             </Link>
-            <Link href="#contact" className="text-muted-foreground hover:text-foreground">
-              Contact
+            <Link href="/contact-us" className="text-muted-foreground hover:text-foreground">
+              Contact Us
             </Link>
           </nav>
           <div className="flex items-center space-x-4">
@@ -280,10 +280,10 @@ export default async function HomePage() {
             <div className="space-y-4">
               <h3 className="font-semibold">Company</h3>
               <div className="space-y-2 text-sm">
-                <Link href="#why" className="block text-muted-foreground hover:text-foreground">
+                <Link href="/about-us" className="block text-muted-foreground hover:text-foreground">
                   About Us
                 </Link>
-                <Link href="#contact" className="block text-muted-foreground hover:text-foreground">
+                <Link href="/contact-us" className="block text-muted-foreground hover:text-foreground">
                   Contact
                 </Link>
                 <Link href="/privacy-policy" className="block text-muted-foreground hover:text-foreground">

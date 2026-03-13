@@ -4,14 +4,17 @@ export async function GET() {
   const base = "https://brahmanigraphics.com";
   const urls = [
     `${base}/`,
+    `${base}/about-us`,
+    `${base}/contact-us`,
     `${base}/services/business-cards`,
     `${base}/services/t-shirt-printing`,
     `${base}/services/wedding-cards`,
     `${base}/services/pamphlets-flyers`,
     `${base}/services/flex-printing`,
     `${base}/services/hoardings`,
-    `${base}/#why`,
-    `${base}/#contact`
+    `${base}/services/flex-printing-in-uppal`,
+    `${base}/privacy-policy`,
+    `${base}/terms-of-service`
   ];
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
